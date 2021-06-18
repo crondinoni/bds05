@@ -9,14 +9,13 @@ public class ReviewTests {
 	public void reviewShouldHaveCorrectStructure() {
 	
 		Review entity = new Review();
-		entity.setId(1L);
-		entity.setText("Text");
+		entity.setText("Filme boníssimo");
 		entity.setMovie(new Movie());
 		entity.setUser(new User());
 	
-		Assertions.assertNotNull(entity.getId());
 		Assertions.assertNotNull(entity.getText());
 		Assertions.assertNotNull(entity.getMovie());
 		Assertions.assertNotNull(entity.getUser());
 	}
 }
+

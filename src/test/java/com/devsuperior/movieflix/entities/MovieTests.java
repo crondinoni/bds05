@@ -24,6 +24,5 @@ public class MovieTests {
 		Assertions.assertNotNull(entity.getYear());
 		Assertions.assertNotNull(entity.getImgUrl());
 		Assertions.assertNotNull(entity.getGenre());
-		Assertions.assertEquals(0, entity.getReviews().size());
 	}
 }

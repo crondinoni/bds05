@@ -10,7 +10,7 @@ public class GenreTests {
 	
 		Genre entity = new Genre();
 		entity.setId(1L);
-		entity.setName("Maria");
+		entity.setName("Adventure");
 	
 		Assertions.assertNotNull(entity.getId());
 		Assertions.assertNotNull(entity.getName());
