@@ -17,6 +17,10 @@ public class Review {
 	
 	private String text;
 	
+	@ManyToOne
+	@JoinColumn(name = "movie_id", nullable=false, insertable=false, updatable=false)
+	private Movie movie;
+	
 	public Review() {
 	}
 
@@ -51,6 +55,10 @@ public class Review {
 		this.text = text;
 	}
 
+	//public List<Movie> getMovies() {
+	//	return movies;
+	//}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
