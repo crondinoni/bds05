@@ -11,10 +11,10 @@ import javax.validation.ConstraintValidatorContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.HandlerMapping;
 
+import com.devsuperior.movieflix.controllers.exceptions.FieldMessage;
 import com.devsuperior.movieflix.dto.UserUpdateDTO;
 import com.devsuperior.movieflix.entities.User;
 import com.devsuperior.movieflix.repositories.UserRepository;
-import com.devsuperior.movieflix.resources.exceptions.FieldMessage;
 
 public class UserUpdateValidator implements ConstraintValidator<UserUpdateValid, UserUpdateDTO> {
 	
